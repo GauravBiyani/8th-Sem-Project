@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" load_steps=20 format=2]
+
+[ext_resource path="res://Assets/PNG/sprites/player/idle/player-idle-1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PNG/sprites/player/hurt/player-hurt-1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNG/sprites/player/idle/player-idle-2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNG/sprites/player/idle/player-idle-3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/PNG/sprites/player/idle/player-idle-4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PNG/sprites/player/run/player-run-3.png" type="Texture" id=6]
+[ext_resource path="res://Assets/PNG/sprites/player/run/player-run-1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/PNG/sprites/player/run/player-run-5.png" type="Texture" id=8]
+[ext_resource path="res://Assets/PNG/sprites/player/run/player-run-4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/PNG/sprites/player/run/player-run-6.png" type="Texture" id=10]
+[ext_resource path="res://Assets/PNG/sprites/player/run/player-run-2.png" type="Texture" id=11]
+[ext_resource path="res://Assets/PNG/sprites/player/climb/player-climb-1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/PNG/sprites/player/climb/player-climb-2.png" type="Texture" id=13]
+[ext_resource path="res://Assets/PNG/sprites/player/climb/player-climb-3.png" type="Texture" id=14]
+[ext_resource path="res://Assets/PNG/sprites/player/hurt/player-hurt-2.png" type="Texture" id=15]
+[ext_resource path="res://Assets/PNG/sprites/player/jump/player-jump-1.png" type="Texture" id=16]
+[ext_resource path="res://Assets/PNG/sprites/player/crouch/player-crouch-1.png" type="Texture" id=17]
+[ext_resource path="res://Assets/PNG/sprites/player/crouch/player-crouch-2.png" type="Texture" id=18]
+[ext_resource path="res://Assets/PNG/sprites/player/jump/player-jump-2.png" type="Texture" id=19]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "Climb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "Crouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Run",
+"speed": 5.0
+} ]

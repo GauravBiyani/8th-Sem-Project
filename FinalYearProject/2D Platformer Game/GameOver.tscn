@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/fonts/KiriFont.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://MainMenubtn.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+outline_size = 4
+outline_color = Color( 0.439216, 0.94902, 0.301961, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.8, 0.207843, 0.207843, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 214.55
+margin_top = 152.255
+margin_right = 852.55
+margin_bottom = 268.255
+custom_fonts/font = SubResource( 1 )
+text = "GAME OVER!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenubtn" type="Button" parent="."]
+margin_left = 388.492
+margin_top = 289.514
+margin_right = 672.492
+margin_bottom = 346.514
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.843137, 0.866667, 0.160784, 1 )
+custom_colors/font_color_hover = Color( 0.992157, 1, 0, 1 )
+text = "Main Menu"
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MainMenubtn" to="MainMenubtn" method="_on_MainMenubtn_pressed"]
